@@ -1,0 +1,15 @@
+[package]
+name = "rand_scenario"
+version = "0.3.4"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+csv = "1.2"
+serde = { version = "1", features = ["derive"] }
+rand = "0.8" # sfmt crate needs version 0.8.
+rand_mt = "4.2"
+toml = "0.7"
+rayon = "1.6"
+process_param = { git = "https://github.com/ShutoTanabashi/process_param_p" }
